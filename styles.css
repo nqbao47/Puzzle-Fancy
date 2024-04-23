@@ -1,0 +1,64 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: url(./images/bg.jpg);
+}
+
+#board {
+    width: 960px;
+    height: 566px;
+    border: 0.5px solid purple;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 0
+}
+
+#board img {
+    width: 238px;
+    height: 139.5px;
+}
+
+#pieces {
+    width: 950px;
+    height: 162.5px;
+    border: 0.2px solid purple;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#pieces img {
+    width: 77px;
+    height: 79px;
+    border: 0.5px solid lightblue;
+}
+
+#playAgainBtn {
+    margin: auto;
+    margin-bottom: 20px;
+        /* Khoảng cách 20px từ phía trên */
+        padding: 10px 20px;
+        /* Kích thước padding */
+        font-size: 16px;
+        /* Kích thước font */
+        font-weight: bold;
+        /* Đậm chữ */
+        background-color: #4CAF50;
+        /* Màu nền */
+        color: white;
+        /* Màu chữ */
+        border: none;
+        /* Không có viền */
+        border-radius: 5px;
+        /* Bo tròn góc */
+        cursor: pointer;
+        /* Con trỏ chuột khi di chuyển qua nút */
+        transition: background-color 0.3s;
+        /* Hiệu ứng màu nền khi hover */
+}
+
+#playAgainBtn:hover {
+    background-color: aquamarine;
+}
